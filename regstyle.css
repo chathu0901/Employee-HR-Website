@@ -4,7 +4,7 @@
 }
 
 .background {
-    background-image: url("../Source/regbg.png"); 
+    background-image: url("regbg.png"); 
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -73,4 +73,5 @@ button[type="submit"]{
 .error { 
     color: red; 
     font-size: 14px; 
+
 } 
