@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div id="navbar">
+            <div class="webname"><span class="wnLabel">Employee HR <br> <span class="wnLabel">Portal</div>
+            <div class="center-section">
+                <a href="profile.html" class="pgname">Profile</a>
+                <a href="projects.html" class="pgname active">Projects</a>
+                <a href="expenses.html" class="pgname">Expenses</a> 
+            </div>
+            <button id="logout">Log Out</button>
+        </div>
+
+        <section id="projects">
+            <label class="topic">Projects</label>
+            <div class="search-bar">
+                <input type="text" id="employeeSearch" placeholder="Enter Employee ID (e.g. ABC01)">
+                <button onclick="filterProjects()">Search</button>
+                <button onclick="resetFilter()">Reset</button>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectEvergreen.png" class="projectImg">
+                        <h3>Project Evergreen</h3>
+                        <p>Tree planting or reforestation project</p>
+                        <p>Duration: 3 Months</p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember" id="emp1">ABC01 - Kiyasha Ranmali Perera</p>
+                        <p class="teamMember">ABC04 - Kethaki maheshi Udawatte</p>
+                        <p class="teamMember" id="emp2">ABC02 - Kamal Jayantha Rathaththa</p>
+                        <p class="teamMember">ABC06 - Warun Uddika Ranwala</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectGreenPulse.jpg" class="projectImg">
+                        <h3>Project GreenPulse</h3>
+                        <p>Real-time environmental monitoring</p>
+                        <p>Duration: 2 Weeks</p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember" id="emp3">ABC03 - Samanth Ediri Karuna</p>
+                        <p class="teamMember">ABC09 - Killian Januddara Bandara</p>
+                        <p class="teamMember" id="emp4">ABC04 - Kethaki maheshi Udawatte</p>
+                        <p class="teamMember">ABC02 - Kamal Jayantha Rathaththa</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectNatureLink.png" class="projectImg">
+                        <h3>Project NatureLink</h3>
+                        <p>Connecting green spaces and nature trails<p>
+                        <p>Duration: 3 Weeks</p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember" id="emp5">ABC05 - Sithija Nuwan Abeysinghe</p>
+                        <p class="teamMember">ABC02 - Kamal Jayantha Rathaththa</p>
+                        <p class="teamMember" id="emp6">ABC06 - Warun Uddika Ranwala</p>
+                        <p class="teamMember">ABC10 - Sehansa Mihini</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectSolarSync.png" class="projectImg">
+                        <h3>Project SolarSync</h3>
+                        <p>Solar panels or renewable energy integration</p>
+                        <p>Duration: 1.5 Months</p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember" id="emp7">ABC07 - Kesara Sadupa Pathirana</p>
+                        <p class="teamMember">ABC05 - Sithija Nuwan Abeysinghe</p>
+                        <p class="teamMember" id="emp8">ABC08 - Shriya Deepika Kumari</p>
+                        <p class="teamMember">ABC04 - Kethaki maheshi Udawatte</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectVerdure.jpg" class="projectImg">
+                        <h3>Project Verdure</h3>
+                        <p>General environmental enrichment project</p>
+                        <p>Duration: 4 Weeks</p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember" id="emp9">ABC09 - Killian Januddara Bandara</p>
+                        <p class="teamMember">ABC07 - Kesara Sadupa Pathirana</p>
+                        <p class="teamMember" id="emp10">ABC10 - Sehansa Mihini Athapaththu</p>
+                        <p class="teamMember">ABC01 - Kiyasha Ranmali Perera</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="left-section">
+                        <img src="../Source/ProjectWildRoots.png" class="projectImg">
+                        <h3>Project WildRoots</h3>
+                        <p>Biodiversity and wildlife conservation</p>
+                        <p>Duration: 2 Months </p>
+                    </div>
+
+                    <div class="right-section">
+                        <h4>Team Members:</h4>
+                        <p class="teamMember">ABC01 - Kiyasha Ranmali Perera</p>
+                        <p class="teamMember">ABC08 - Shriya Deepika Kumari</p>
+                        <p class="teamMember">ABC10 - Sehansa Mihini Athapaththu</p>
+                        <p class="teamMember">ABC05 - Sithija Nuwan Abeysinghe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer">
+            <table>
+                <tr><th class="footerTopic" colspan="7">Contact Us</tr>
+                <tr>
+                    <td class="tdFooterT"><img src="../Source/phoneFooter.png"> Phone:</td>
+                    <td class="tdFooter">+94 765231454</td>
+                    <td class="tdFooterT"><img src="../Source/mailFooter.png"> Email:</td>
+                    <td class="tdFooter"><a href="#">abclanka@gmail.com</a></td>
+                    <td class="tdFooterT"><img src="../Source/addressFooter.png"> Address:</td>
+                    <td class="tdFooterA" colspan="4">123H, Karuna Mawatha, Passala</td>
+                </tr>
+            </table>
+            <div class="social-container">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <img src="../Source/twitter.png" class="followIcon">
+                    <img src="../Source/facebook.png" class="followIcon">
+                    <img src="../Source/instagram.png" class="followIcon">
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.regbody {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../Source/regbg.png"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.form-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    max-width: 500px;
+    width: 100%;
+    height: 685px;
+}
+
+#regForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.regfield {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="number"] {
+    padding: 2px;
+    width: 250px;
+}
+
+button[type="submit"]{
+    width: fit-content;
+    background-color: rgb(104, 141, 206);
+    padding: 5px;
+    border-radius: 30%;
+    align-self: center;
+}
+
+.error { 
+    color: red; 
+    font-size: 14px; 
+} 
